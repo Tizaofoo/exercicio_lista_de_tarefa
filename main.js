@@ -6,8 +6,6 @@ $(document).ready(function () {
         const valorinput = $("#tarefa").val();
         $("ul").append(`<li><span class="pendente">📍</span> ${valorinput}</li>`);
         $("#tarefa").val('');
-        $('#botao-cancelar').click(function() {
-        $('form').slideUp();
 
         $("ul").on('click', 'li', function(){
             $(this).toggleClass("linha-meio");
